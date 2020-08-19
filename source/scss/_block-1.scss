@@ -1,0 +1,72 @@
+.carousel {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	max-width: 1000px;
+	padding: 0 20px;
+	&__radio-button {display: none;}
+	&__switchers {
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translate(-50%, 100%);
+	}
+	&__switcher {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background: $col-2;
+		cursor: pointer;
+	}
+	&__images {
+		position: relative;
+		width: 800px;
+		height: 600px;
+		overflow: hidden;
+	}
+	&__slide {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		z-index: 1;
+		transition: 1s;
+	}
+	&__img {
+		width: 100%;
+		height: 100%;
+	}
+	&__prev, &__next {
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		width: auto;
+		padding: 0 10px;
+		color: $col-1;
+		cursor: pointer;
+		border-radius: 5px;
+		z-index: 10;
+		font-size: $fz-l;
+		&:hover {background: rgba(255, 255, 255, 0.7);}
+	}
+	&__next {right: 0;}
+}
+.selected {transform: scale(1.2);}
+
+@media screen and (max-width: 858px) {
+	.carousel {
+		&__images {
+			width: 500px;
+			height: 350px;
+		}
+	}
+}
+@media screen and (max-width: 551px) {
+	.carousel {
+		&__images {
+			width: 300px;
+			height: 200px;
+		}
+	}
+}

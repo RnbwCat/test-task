@@ -1,0 +1,30 @@
+//=== Обнуление стилей браузера ===
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+//=== /Обнуление стилей браузера ===
+
+//=== Переменные ===
+$col-1: #fff;
+$col-2: #000;
+$col-3: #ccc;
+$col-4: #aaa;
+
+$fz-l: 50px;
+$fz-s: 18px;
+$fz-xs: 13px;
+//=== /Переменные ===
+
+.block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+//=== Основной контент ===
+@import '_block-1.scss';
+@import '_block-2.scss';
+@import '_block-3.scss';
+//=== /Основной контент ===

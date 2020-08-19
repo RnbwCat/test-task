@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+	<section class="block block-one anchor">
+		<div class="carousel">
+			<input type="radio" id="button-1" class="carousel__radio-button" name="radiobuttons" checked>
+			<input type="radio" id="button-2" class="carousel__radio-button" name="radiobuttons">
+			<input type="radio" id="button-3" class="carousel__radio-button" name="radiobuttons">
+			<div class="carousel__switchers">
+				<label for="button-1" class="carousel__switcher" onclick="currentSlide(1)"></label>
+				<label for="button-2" class="carousel__switcher" onclick="currentSlide(2)"></label>
+				<label for="button-3" class="carousel__switcher" onclick="currentSlide(3)"></label>
+			</div>
+			<div class="carousel__images">
+				<div class="carousel__slide" id="slide-1"><img src="https://picsum.photos/800/600?grayscale" alt="Image" class="carousel__img"></div>
+				<div class="carousel__slide" id="slide-2"><img src="https://picsum.photos/800/600?grayscale&blur=2" alt="Image" class="carousel__img"></div>
+				<div class="carousel__slide" id="slide-3"><img src="https://picsum.photos/800/600?grayscale&blur=4" alt="Image" class="carousel__img"></div>
+				<a class="carousel__prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="carousel__next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+		</div>
+	</section>
+	<section class="block block-two anchor">
+		<div class="elements">
+			<div class="elements__box"><img src="img/heart-1.svg" alt="Heart" class="elements__img"></div>
+			<div class="elements__box red"><img src="img/heart-3.svg" alt="Heart" class="elements__img"></div>
+			<div class="elements__box"><img src="img/heart-1.svg" alt="Heart" class="elements__img"></div>
+		</div>
+	</section>
+	<section class="block block-three anchor">
+		<form action="#" class="form">
+			<div class="form__content content">
+				<input type="text" class="form__input" value="Write something">
+				<button class="form__btn">Send</button>
+			</div>
+		</form>
+		<div class="message form">
+			<div class="message__content content">
+				<p class="message__text">Your message send!</p>
+			</div>
+		</div>
+	</section>
+	<!-- Скрипты -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/scroll.js"></script>
+	<script src="js/parallax.js"></script>
+	<script src="js/form.js"></script>
+	<!-- Скрипты -->
+</body>
+</html>

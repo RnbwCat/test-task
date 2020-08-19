@@ -1,0 +1,15 @@
+.elements {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	width: 800px;
+	height: 100vh;
+	overflow: hidden;
+	&__box {
+		width: 100px;
+		height: 100px;
+		transition: 0.2s;
+	}
+	&__img {width: 100%;}
+}
